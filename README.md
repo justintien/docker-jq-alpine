@@ -6,7 +6,7 @@ Docker image for jq based on alpine linux image, just over 5MB in size.
 - you can modify ~/.bashrc or ~/.bash_profile
 
 ```sh
-alias jq="docker run -i --rm -v justin:jq-alpine jq ."
+alias jq="docker run -i --rm thitbbeb/jq-alpine jq ."
 
 echo "{\"test\":1}" | jq .
 ```
@@ -14,5 +14,5 @@ echo "{\"test\":1}" | jq .
 - or you also can directly to use:
 
 ```sh
-docker run -it --rm -v justin:jq-alpine jq 
+docker run -it --rm thitbbeb/jq-alpine jq 
 ```
