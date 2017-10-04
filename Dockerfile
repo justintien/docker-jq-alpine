@@ -6,4 +6,8 @@ RUN apk --update add jq && \
     rm -rf /var/lib/apt/lists/* && \
     rm /var/cache/apk/*
 
-CMD ["sh"]
+VOLUME /jq
+WORKDIR /jq
+
+ENTRYPOINT ["jq"]
+CMD ["--help"]
